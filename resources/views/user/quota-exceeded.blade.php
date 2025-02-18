@@ -34,7 +34,7 @@ You understand that failure to provide necessary consent may result in the inabi
 By submitting documents or information electronically, you agree that your electronic submission constitutes your signature and acceptance of these Terms.</p><p>
                 
 You agree to receive electronic communications, including signed agreements, via the email address provided.
-If you do not receive a confirmation email containing your signed agreement, you must notify us immediately at infoATrasulcllc.com</p><p>
+If you do not receive a confirmation email containing your signed agreement, you must notify us immediately at info@rasulcllc.com</p><p>
                 
 7. Uploaded Documents</p><p>
                 
@@ -73,7 +73,7 @@ These Terms are governed by the laws of NY/United States Any disputes arising fr
 
 12. Contact Information</p><p>
                 
-For any questions or concerns regarding these Terms, please contact us at infoATrasulcllc.com </p>
+For any questions or concerns regarding these Terms, please contact us at info@rasulcllc.com </p>
 </div><p>To proceed, you must carefully review the Terms of Use by scrolling through the content. Once you have read the terms, the agreement checkbox will be enabled. You cannot continue without accepting the terms. This ensures compliance and acknowledgment of responsibilities before using our services.</p>
         <label class="form-input">
             <input type="checkbox" id="agree-checkbox" disabled> I have read and agree to the <a href="https://rasulcllc.com/terms-of-use/">Terms of Use</a>
@@ -209,6 +209,7 @@ For any questions or concerns regarding these Terms, please contact us at infoAT
               <small>You'll Pay</small>
             <h4  class="payamount" id="amount2" name="amount2"></h4>
             <p class="px-2"><small>Pay with Credit/Debit Card Fee "3.5% plus 10c" (a non-refundable portal processing fee applies)</small></p>
+            <p><small>Please read and agree to our <a href="https://rasulcllc.com/terms-of-use/" target="_blank">Terms of Use</a> before proceeding.</small></p>
             <div class="d-table bg-white p-3 text-center secureimg">
                     <img src="/img/secure.png" width="80%" alt="secure">
                     </div>
@@ -256,6 +257,10 @@ For any questions or concerns regarding these Terms, please contact us at infoAT
                         <label for="card_zipcode" class="form-label">Zipcode</label>
                         <input type="text" class="form-control" id="card_zipcode" name="card_zipcode" required>
                     </div>
+
+                    <div class="col-lg-12 mb-3 d-flex align-items-center justify-content-start">
+                        <input type="checkbox" id="terms" name="terms" class="border-primary me-2" style="width:20px" required="" >
+                        <label for="terms">I have read the <a href="https://rasulcllc.com/terms-of-use/" target="_blank">terms of use</a> and <a href="https://rasulcllc.com/privacy-policy/" target="_blank">privacy policy</a></label> </div> 
 
                     <div class="mb-3" style="display:none">
                         <label for="amount" class="form-label">Amount</label>
@@ -333,6 +338,10 @@ For any questions or concerns regarding these Terms, please contact us at infoAT
                         <label for="card_zipcode" class="form-label">Zipcode</label>
                         <input type="text" class="form-control" id="card_zipcode" name="card_zipcode" required>
                     </div>
+
+                    <div class="col-lg-12 mb-3 d-flex align-items-center justify-content-start">
+                        <input type="checkbox" id="termspop" name="termspop" class="border-primary me-2" style="width:20px" required="" >
+                        <label for="termspop">I have read the <a href="https://rasulcllc.com/terms-of-use/" target="_blank">terms of use</a> and <a href="https://rasulcllc.com/privacy-policy/" target="_blank">privacy policy</a></label> </div>
 
                     <div class="mb-3" style="display:none">
                         <label for="amount" class="form-label">Amount</label>

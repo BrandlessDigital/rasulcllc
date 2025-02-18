@@ -3929,6 +3929,7 @@
               <small>You'll Pay</small>
               <h4  class="payamount" id="amount2" name="amount2"></h4>
               <p class="px-2"><small>Pay with Credit/Debit Card Fee "3.5% plus 10c" (a non-refundable portal processing fee applies)</small></p>
+              <p><small>Please read and agree to our <a href="https://rasulcllc.com/terms-of-use/" target="_blank">Terms of Use</a> before proceeding.</small></p>
             <div class="d-table bg-white p-3 text-center secureimg">
                     <img src="/img/secure.png" width="80%" alt="secure">
                     </div>
@@ -3976,6 +3977,9 @@
                         <label for="card_zipcode" class="form-label">Zipcode</label>
                         <input type="text" class="form-control" id="card_zipcode" name="card_zipcode" required>
                     </div>
+                    <div class="col-lg-12 mb-3 d-flex align-items-center justify-content-start">
+                        <input type="checkbox" id="termspop" name="termspop" class="border-primary me-2" style="width:20px" required="" >
+                        <label for="termspop">I have read the <a href="https://rasulcllc.com/terms-of-use/" target="_blank">terms of use</a> and <a href="https://rasulcllc.com/privacy-policy/" target="_blank">privacy policy</a></label> </div>
                     <div class="mb-3" style="display:none">
                         <label for="amount" class="form-label">Amount</label>
                         <!-- Set the amount field to be readonly and set the value dynamically -->
