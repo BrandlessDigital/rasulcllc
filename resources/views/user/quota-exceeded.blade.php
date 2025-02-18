@@ -1,5 +1,88 @@
 <x-app-layout>
 <!--sheikh-->
+<div id="popup">
+    <div class="popup-content">
+        <h2 class="text-primary"><strong>Terms of Use</strong></h2>
+        <div id="terms-box" onscroll="enableCheckbox()">
+             <p>Last Updated: 1st February 2025</p><p>1. Introduction</p><p>Welcome to Rasul C LLC (“Company”, “we”, “our”, “us”). By accessing or using our services, website, or any associated applications (collectively, “Services”), you agree to comply with and be bound by these Terms of Use (“Terms”). If you do not agree with any part of these Terms, please refrain from using our Services.</p><p>
+            </p><p>2. Acceptance of Terms</p><p>
+                
+By using our Services, you confirm that you have read, understood, and agreed to be bound by these Terms, our Privacy Policy, and any other applicable agreements.</p><p>
+                3. Eligibility</p><p>
+                
+You must be at least 18 years old to use our Services. By using our Services, you represent and warrant that you meet this requirement.</p><p>
+                
+
+4. Privacy and Data Protection</p><p>
+                
+We take data privacy seriously. By using our Services, you acknowledge and agree to our Privacy Policy, which outlines how we collect, use, and protect your personal information. You consent to the collection, storage, processing, and sharing of your personal data as described in our Privacy Policy.</p><p>
+                
+
+5. User Consent for Data Sharing</p><p>
+                
+To comply with applicable privacy laws, you acknowledge that:</p><p>
+                
+
+You voluntarily provide your personal information, including but not limited to your name, address, and date of birth, where required.</p><p>
+                
+You grant us permission to process and exchange your personal information for the purpose of providing the requested Services. </p><p>
+                
+You understand that failure to provide necessary consent may result in the inability to use certain Services.
+6. Electronic Signature and Agreement</p><p>
+                
+
+By submitting documents or information electronically, you agree that your electronic submission constitutes your signature and acceptance of these Terms.</p><p>
+                
+You agree to receive electronic communications, including signed agreements, via the email address provided.
+If you do not receive a confirmation email containing your signed agreement, you must notify us immediately at infoATrasulcllc.com</p><p>
+                
+7. Uploaded Documents</p><p>
+                
+
+Rasul C LLC is not responsible for any documents uploaded by users.</p><p>
+                
+Users are solely responsible for ensuring that uploaded documents are accurate, complete, and comply with all applicable laws and regulations.</p><p>
+                
+Rasul C LLC does not assume liability for any loss, damage, or misuse of uploaded documents.</p><p>
+                
+8. Prohibited Activities</p><p>
+                
+You agree not to engage in any activity that:</p><p>
+                
+
+Violates any applicable laws or regulations.</p><p>
+                
+Involves unauthorized access to our systems or the personal information of others.</p><p>
+                
+Misrepresents your identity or provides false information.</p><p>
+                
+9. Limitation of Liability</p><p>
+                
+To the fullest extent permitted by law, Rasul C LLC is not liable for any direct, indirect, incidental, consequential, or punitive damages arising from the use of our Services.</p><p>
+                
+
+10. Changes to These Terms</p><p>
+                
+We reserve the right to modify these Terms at any time. We will notify users of significant changes via email or through our website. Continued use of our Services after changes become effective constitutes acceptance of the revised Terms.</p><p>
+                
+
+11. Governing Law</p><p>
+                
+These Terms are governed by the laws of NY/United States Any disputes arising from these Terms shall be resolved in the appropriate courts of NY/United States.</p><p>
+                
+
+12. Contact Information</p><p>
+                
+For any questions or concerns regarding these Terms, please contact us at infoATrasulcllc.com </p>
+</div><p>To proceed, you must carefully review the Terms of Use by scrolling through the content. Once you have read the terms, the agreement checkbox will be enabled. You cannot continue without accepting the terms. This ensures compliance and acknowledgment of responsibilities before using our services.</p>
+        <label class="form-input">
+            <input type="checkbox" id="agree-checkbox" disabled> I have read and agree to the <a href="https://rasulcllc.com/terms-of-use/">Terms of Use</a>
+        </label>
+        <br><br>
+        <button id="agree-button" disabled onclick="closePopup()" class="btn btn-success">Agree & Continue</button>
+    </div>
+</div>
+
 <div class="container-fluid content-inner pb-0" id="page_layout">
     <div class="row">
         <div class="border-bottom pb-3 d-flex align-items-center justify-content-between">
@@ -268,9 +351,9 @@
 
 @section('styles')
 <style>
-    
 
-</style>
+     </style>
+
 @endsection
 
 
@@ -314,5 +397,24 @@ document.getElementById('expiry_date').addEventListener('input', function (e) {
     e.target.value = value;
 });
 </script>
+
+<script defer>
+    function enableCheckbox() {
+        let termsBox = document.getElementById("terms-box");
+        let checkbox = document.getElementById("agree-checkbox");
+        if (termsBox.scrollTop + termsBox.clientHeight >= termsBox.scrollHeight) {
+            checkbox.disabled = false;
+        }
+    }
+
+    document.getElementById("agree-checkbox").addEventListener("change", function() {
+        document.getElementById("agree-button").disabled = !this.checked;
+    });
+
+    function closePopup() {
+        document.getElementById("popup").style.display = "none";
+    }
+</script>
+
 
 </x-app-layout>

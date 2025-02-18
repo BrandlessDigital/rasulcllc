@@ -121,7 +121,7 @@
         <div class="col-lg-12 d-flex justify-content-center">
             <div class="form-check mb-3 d-flex align-items-center justify-content-center">
                 <input type="checkbox" class="form-check-input border-primary me-2" id="customCheck1" required>
-                <label class="form-check-label" for="customCheck1">I agree with the terms of use</label>
+                <label class="form-check-label" for="customCheck1">I agree with the <a href="https://rasulcllc.com/terms-of-use/" target="_blank">Terms of Use</a></label>
             </div>
         </div>
     </div>

@@ -892,9 +892,9 @@
                                                                 <input type="checkbox" id="terms" name="terms"
                                                                     class="form-check-input border-primary me-2 " required="">
                                                                 <label for="terms">I have read the <a
-                                                                        href="https://rasulcllc.com/terms-and-conditions/"
+                                                                        href="https://rasulcllc.com/terms-of-use/"
                                                                         target="_blank">terms of
-                                                                        services</a> and <a
+                                                                        use</a> and <a
                                                                         href="https://rasulcllc.com/privacy-policy/"
                                                                         target="_blank">privacy
                                                                         policy</a></label>
